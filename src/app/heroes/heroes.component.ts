@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Hero } from '../hero.model';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { HEROES } from '../mock-heroes';
 
 @Component({
   selector: 'app-heroes',
@@ -15,4 +16,6 @@ export class HeroesComponent {
     id: 1,
     name: 'wolverine'
   }
+
+  heroes = HEROES
 }
